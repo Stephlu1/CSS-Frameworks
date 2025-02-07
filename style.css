@@ -1,0 +1,117 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b35e93;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 22px;
+    font-family: 'Poppins', cursive;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px;
+    background-color: #FFEBE8; 
+}
+
+.footer {
+    background-color: #FFC0CB; 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Poppins', cursive;
+    font-weight: bold;
+    font-size: 16px;
+    border-top: 5px solid #E6E6FA; 
+}
+
+:root {
+    --primary-color: #FFC0CB; 
+    --secondary-color: #E6E6FA; 
+    --text-color: #C71585; 
+    --font-size-lg: 24px;
+    --font-size-md: 18px;
+}
+
+.intro {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 50px;
+    font-size: var(--font-size-md);
+    font-family: 'Dancing Script', cursive;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.flex-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #FFD1DC; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.relative-container {
+    position: relative;
+    background-color: #FFF0F5; 
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #E6E6FA; 
+    color: rgb(170, 69, 103);
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
